@@ -41,7 +41,6 @@ class Rainbow {
 }
 
 client.on('ready', async () => {
-    console.log("Bot on");
     for (const prop in DATA.server) {
         if (prop == "Rainbow") Rainbow.changeColor(prop, DATA.server[prop], DATA.timeout)
         else {
